@@ -14,17 +14,21 @@ import java.util.List;
 @RequestMapping(value = "/animals")
 public class AnimalController {
 
+    private final CheckService checkService;
+
     @Autowired
-    private CheckService checkService;
+    public AnimalController(CheckService checkService) {
+        this.checkService = checkService;
+    }
 
     @GetMapping("all")
-    private List<Animal> getAllAnimals() {
+    public List<Animal> getAllAnimals() {
 
         return checkService.getAllAnimals();
     }
 
     @GetMapping("check")
-    private List<String> checkSay() {
+    public List<String> checkSay() {
 
         return checkService.check();
     }

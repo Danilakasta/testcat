@@ -23,14 +23,14 @@ class CheckServiceImplTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void getAllAnimals() {
+    void getAllAnimals() {
         Assertions.assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/animals/all",
                 String.class)).contains("[{\"legsCount\":4},{\"legsCount\":2},{\"legsCount\":0}]");
 
     }
 
     @Test
-    public void getAllCheck() {
+    void getAllCheck() {
         Assertions.assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/animals/check",
                 String.class)).contains("[\" Животное - Dog(legsCount=4) ; издает - Гав ; кол-во ног - 4\",\" Животное - Duck(legsCount=2) ; издает - Кря ; кол-во ног - 2\",\" Животное - Fish(legsCount=0) ; издает - null ; кол-во ног - 0\"]");
 

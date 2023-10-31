@@ -2,7 +2,6 @@ package com.example.testcat.component;
 
 import com.example.testcat.model.Animal;
 import com.example.testcat.model.Duck;
-import com.example.testcat.model.Fish;
 import org.springframework.stereotype.Component;
 
 @Component

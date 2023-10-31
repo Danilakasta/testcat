@@ -1,10 +1,16 @@
 #Тестовое приложение 
-###Пример работы со Spring Faimwork
+###Пример работы со Spring Framework
+
+Свагер документация
+http://localhost:8080/swagger-ui/index.html
 
 Test
->http://localhost:8080/animals/all
->http://localhost:8080/animals/check
+>http://localhost:8090/animals/all
+>http://localhost:8090/animals/check
 
-Cущьности предметной области: 
-   - Animal
+Модели предметной области: 
+   - Abstract Animal
+   - Dog
+   - Fish
+   - Duck
      

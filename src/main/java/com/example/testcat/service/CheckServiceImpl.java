@@ -12,9 +12,7 @@ import java.util.List;
 @Service
 @Log
 public class CheckServiceImpl implements CheckService {
-
     private final List<AnimalComponent> animalComponentList;
-
     @Autowired
     public CheckServiceImpl(List<AnimalComponent> animalComponentList) {
         this.animalComponentList = animalComponentList;
@@ -34,7 +32,7 @@ public class CheckServiceImpl implements CheckService {
 
         animalComponentList.forEach(animalComponent -> {
             //TODO добавить  имя на русском языке вместо вывлда всего животного animalComponent.getAnimal()
-            listCheck.add(" Животное - " + animalComponent.getAnimal()+
+            listCheck.add(" Животное - " + animalComponent.getAnimal() +
                     " ; издает - " + animalComponent.say() +
                     " ; кол-во ног - " + animalComponent.getLegsCount());
         });

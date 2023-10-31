@@ -16,9 +16,6 @@ class TestcatApplicationTests {
 
 	@Autowired
 	private TestRestTemplate restTemplate;
-	@Test
-	void contextLoads() {
-	}
 
 	@Test
 	void simpleTest_success() {
