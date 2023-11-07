@@ -2,12 +2,14 @@ package com.example.testcat.service;
 
 import com.example.testcat.model.Animal;
 import com.example.testcat.model.AnimalAbstract;
-import com.example.testcat.model.Dog;
 
 import java.util.List;
 
 public interface AnimalService {
-    Animal save(AnimalAbstract animal);
 
     List<AnimalAbstract> getAnimals();
+
+    Animal save(AnimalAbstract animal);
+
+    //TODO добавить метод delete (На вход получает ID с ним уже идеш в метод delete репозитория animalRepository)
 }

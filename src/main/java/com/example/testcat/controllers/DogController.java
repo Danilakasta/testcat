@@ -19,7 +19,7 @@ import java.util.List;
 public class DogController {
 
     private final AnimalService animalService;
-    
+
     @Autowired
     public DogController(AnimalService animalService) {
         this.animalService = animalService;
