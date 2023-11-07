@@ -1,6 +1,7 @@
 package com.example.testcat.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,9 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class TestController {
 
-    @GetMapping("test")
-    public String getAllAnimals() {
+    @GetMapping("health/check")
+    public String health() {
 
-        return "Hello, World";
+        return "ok";
+    }
+
+
+    @PostMapping("health/error")
+    public String error() throws IllegalAccessException {
+
+        throw new IllegalAccessException("Пиздец!!!");
     }
 }
