@@ -4,8 +4,9 @@ import jakarta.persistence.*;
 
 @Entity(name="animal")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-//TODO 6. Добавить клас человек,динозавр,растение, инопланетянил
+//TODO 6. Добавить клас человек, динозавр, растение, инопланетянил
 // подумать будут ли они наслединками Animal и как все таки организовать наследование коректно
+// подумать сколько под это нужно таблиц для хранения даных
 public class AnimalAbstract implements Animal  {
 
     @Id
