@@ -14,7 +14,5 @@ public interface AnimalComponent {
         return getAnimal().say();
     }
 
-    default Integer getLegsCount() {
-        return getAnimal().getLegsCount();
-    }
+
 }

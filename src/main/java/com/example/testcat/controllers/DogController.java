@@ -2,6 +2,7 @@ package com.example.testcat.controllers;
 
 
 import com.example.testcat.model.Animal;
+import com.example.testcat.model.AnimalAbstract;
 import com.example.testcat.model.Dog;
 import com.example.testcat.service.AnimalService;
 import com.example.testcat.service.CheckService;
@@ -15,14 +16,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/animals")
-public class AnimalController {
+public class DogController {
 
     private final CheckService checkService;
 
     private final AnimalService animalService;
 
     @Autowired
-    public AnimalController(CheckService checkService, AnimalService animalService) {
+    public DogController(CheckService checkService, AnimalService animalService) {
         this.checkService = checkService;
         this.animalService = animalService;
     }
@@ -36,10 +37,14 @@ public class AnimalController {
 
 
     @GetMapping("all")
-    public List<Dog> getAnimal() {
+    public List<AnimalAbstract> getAnimal() {
 
         return animalService.getAnimals();
     }
+
+    //TODO добавить метод delete (На вход получает ID с ним уже идеш в метод delete сервиса animalService)
+
+    //TODO написать контроллеры для остальных типов животных, в данном контроллере создаются только собаки)))))
 
 //    @GetMapping("all")
 //    public List<Animal> getAllAnimals() {

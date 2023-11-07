@@ -33,8 +33,7 @@ public class CheckServiceImpl implements CheckService {
         animalComponentList.forEach(animalComponent -> {
             //TODO добавить  имя на русском языке вместо вывлда всего животного animalComponent.getAnimal()
             listCheck.add(" Животное - " + animalComponent.getAnimal() +
-                    " ; издает - " + animalComponent.say() +
-                    " ; кол-во ног - " + animalComponent.getLegsCount());
+                    " ; издает - " + animalComponent.say());
         });
 
         log.info(listCheck.toString());

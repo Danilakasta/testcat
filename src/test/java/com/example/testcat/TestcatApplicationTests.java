@@ -1,7 +1,5 @@
 package com.example.testcat;
 
-import com.example.testcat.controllers.AnimalController;
-import com.example.testcat.controllers.TestController;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

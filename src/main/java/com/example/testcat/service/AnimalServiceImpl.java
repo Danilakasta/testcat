@@ -1,6 +1,7 @@
 package com.example.testcat.service;
 
 import com.example.testcat.model.Animal;
+import com.example.testcat.model.AnimalAbstract;
 import com.example.testcat.model.Dog;
 import com.example.testcat.repository.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +26,10 @@ public class AnimalServiceImpl implements AnimalService {
         return animal;
     }
 
+    //TODO добавить метод delete (На вход получает ID с ним уже идеш в метод delete репозитория animalRepository)
+
     @Override
-    public List<Dog> getAnimals() {
+    public List<AnimalAbstract > getAnimals() {
         return animalRepository.findAll();
     }
 }

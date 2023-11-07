@@ -16,3 +16,9 @@ Test
    - Dog
    - Fish
    - Duck
+
+Прога для конекта к базе
+https://dbeaver.io/download/
+
+Инфа по стратегиям хранения данных (короч как созранить данные в одной таблице)
+https://www.baeldung.com/hibernate-inheritance

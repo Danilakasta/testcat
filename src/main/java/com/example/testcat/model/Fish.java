@@ -1,24 +1,20 @@
 package com.example.testcat.model;
 
-import lombok.AllArgsConstructor;
+import jakarta.persistence.*;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+
 @Data
+@Entity
 @ToString
-@AllArgsConstructor
-@NoArgsConstructor
-public class Fish implements Animal{
-    private Integer legsCount = 0;
+public class Fish extends AnimalAbstract{
+
+    private Integer legsCount;
 
     @Override
     public String say() {
         return null;
     }
 
-    @Override
-    public Integer getLegsCount() {
-        return legsCount;
-    }
 }
