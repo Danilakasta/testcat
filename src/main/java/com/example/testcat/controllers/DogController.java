@@ -18,13 +18,10 @@ import java.util.List;
 @RequestMapping(value = "/dog")
 public class DogController {
 
-    private final CheckService checkService;
-
     private final AnimalService animalService;
-
+    
     @Autowired
-    public DogController(CheckService checkService, AnimalService animalService) {
-        this.checkService = checkService;
+    public DogController(AnimalService animalService) {
         this.animalService = animalService;
     }
 
@@ -39,6 +36,7 @@ public class DogController {
     @GetMapping("all")
     public List<AnimalAbstract> getAnimal() {
 
+        //TODO В этом месте нужно вернуть только собак) сейчас вернутся все животные
         return animalService.getAnimals();
     }
 
