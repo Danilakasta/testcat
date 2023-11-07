@@ -11,5 +11,5 @@ public interface AnimalService {
 
     Animal save(AnimalAbstract animal);
 
-    //TODO добавить метод delete (На вход получает ID с ним уже идеш в метод delete репозитория animalRepository)
+    //TODO 2. добавить метод delete (На вход получает ID с ним уже идеш в метод delete репозитория animalRepository)
 }

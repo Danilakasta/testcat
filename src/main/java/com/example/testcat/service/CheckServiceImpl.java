@@ -31,7 +31,7 @@ public class CheckServiceImpl implements CheckService {
         List<String> listCheck = new ArrayList<>();
 
         animalComponentList.forEach(animalComponent -> {
-            //TODO добавить  имя на русском языке вместо вывлда всего животного animalComponent.getAnimal()
+            //TODO 1. добавить  имя на русском языке вместо вывлда всего животного animalComponent.getAnimal()
             listCheck.add(" Животное - " + animalComponent.getAnimal() +
                     " ; издает - " + animalComponent.say());
         });

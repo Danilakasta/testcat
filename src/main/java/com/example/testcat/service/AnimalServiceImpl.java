@@ -31,7 +31,7 @@ public class AnimalServiceImpl implements AnimalService {
     }
 
 
-    //TODO добавить метод delete (На вход получает ID с ним уже идеш в метод delete репозитория animalRepository)
+    //TODO 2. добавить метод delete (На вход получает ID с ним уже идеш в метод delete репозитория animalRepository)
 
 
 }
