@@ -9,6 +9,7 @@ import lombok.ToString;
 @ToString
 public class Dog extends AnimalAbstract {
 
+    //Кол ног
     private Integer legsCount;
 
     @Override

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/animals")
+@RequestMapping(value = "/dog")
 public class DogController {
 
     private final CheckService checkService;
@@ -46,15 +46,5 @@ public class DogController {
 
     //TODO написать контроллеры для остальных типов животных, в данном контроллере создаются только собаки)))))
 
-//    @GetMapping("all")
-//    public List<Animal> getAllAnimals() {
-//
-//        return checkService.getAllAnimals();
-//    }
 
-    @GetMapping("check")
-    public List<String> checkSay() {
-
-        return checkService.check();
-    }
 }

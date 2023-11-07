@@ -10,8 +10,8 @@ import lombok.ToString;
 @ToString
 public class Fish extends AnimalAbstract{
 
-    private Integer legsCount;
-
+    //Кол плавников
+    private Integer finCount;
     @Override
     public String say() {
         return null;

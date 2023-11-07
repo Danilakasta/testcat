@@ -7,7 +7,7 @@ import com.example.testcat.model.Dog;
 import java.util.List;
 
 public interface AnimalService {
-    Animal save(Dog animal);
+    Animal save(AnimalAbstract animal);
 
     List<AnimalAbstract> getAnimals();
 }
